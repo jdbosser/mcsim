@@ -8,7 +8,7 @@
   };
 
 
-  outputs = { self, nixpkgs, flakeutils, render-anim }: 
+  outputs = { self, nixpkgs, flakeutils}: 
     flakeutils.lib.eachDefaultSystem (system:
         let pkgs = nixpkgs.legacyPackages.${system}; 
         
